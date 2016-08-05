@@ -20,3 +20,14 @@ type RESULT = OK | KO;
 function check(something: any): RESULT {
   return 'what?';
 }
+
+type device = {
+  name: string,
+  vendor: string,
+  price: number
+}
+
+const MacBook: device = {
+  name: 'MacBook',
+  vendor: 'Apple',
+  price: 1500}; // Try with '1500' string, typechecking will raise an error.
